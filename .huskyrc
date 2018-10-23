@@ -1,0 +1,3 @@
+{
+	"pre-push": "npm run build & git add . & git commit -m 'Update Storybook'"
+}
