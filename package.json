@@ -1,0 +1,40 @@
+{
+  "name": "ske-12-ui",
+  "version": "1.0.0",
+  "description": "UIKit for SKE-12 Site",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run storybook",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReiiYuki/ske-12-ui.git"
+  },
+  "keywords": [
+    "ui",
+    "ske",
+    "ske12",
+    "ske-12",
+    "styled"
+  ],
+  "author": "SKE-12",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ReiiYuki/ske-12-ui/issues"
+  },
+  "homepage": "https://github.com/ReiiYuki/ske-12-ui#readme",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "styled-components": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.4"
+  }
+}
