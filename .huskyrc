@@ -1,6 +1,6 @@
 {
 	"hooks": {
 		"pre-commit": "",
-		"pre-push": "npm run build & git add -A"
+		"pre-push": "npm run build & git add -A & git commit -am 'Update Storybook'"
 	}
 }
