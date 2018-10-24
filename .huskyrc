@@ -1,4 +1,4 @@
 {
-	"pre-commit": "echo 'aaa'",
+	"pre-commit": "npm run storybook",
 	"pre-push": "npm run build & git add . & git commit -m 'Update Storybook'"
 }
