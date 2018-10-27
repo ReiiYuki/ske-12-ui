@@ -1,17 +1,30 @@
 const path = require("path");
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
-// Export a function. Accept the base config as the only param.
-module.exports = (storybookBaseConfig, configType) => {
-  // configType has a value of 'DEVELOPMENT' or 'PRODUCTION'
-  // You can change the configuration based on that.
-  // 'PRODUCTION' is used when building the static version of storybook.
-
-  // Make whatever fine-grained changes you need
-  storybookBaseConfig.resolve.modules.push(
-	path.resolve('./'),
-	path.resolve('./src')
-  )
-  console.log(storybookBaseConfig)
-  // Return the altered config
-  return storybookBaseConfig;
-};
+module.exports = {
+	entry: 'src/index.js',
+	output: {
+		path: path.resolve('lib'),
+		filename: 'index.js',
+		library: 'ske-12-ui',
+		libraryTarget: 'umd',
+		umdNamedDefine: true
+	},
+	module: {
+		rules: [{
+			test: /\.js$/,
+			use: 'babel-loader',
+		}]
+	},
+	resolve: {
+		modules: [
+			'node_modules',
+			path.resolve('./'),
+			path.resolve('./src'),
+		]
+	},
+	devtool: 'source-map',
+	plugins: [
+		new LodashModuleReplacementPlugin
+	]
+}
