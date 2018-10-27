@@ -8,7 +8,8 @@ module.exports = (storybookBaseConfig, configType) => {
 
   // Make whatever fine-grained changes you need
   storybookBaseConfig.resolve.modules.push(
-	path.resolve('./')
+	path.resolve('./'),
+	path.resolve('./src')
   )
   console.log(storybookBaseConfig)
   // Return the altered config
