@@ -1,10 +1,11 @@
 export const fontSizes = {
-	title: '36px',
-	header: '24px',
-	header2: '18px',
-	default: '16px',
-	note: '12px',
-	footer: '8px',
+	title: '40px',
+	header: '32px',
+	header2: '28px',
+	default: '20px',
+	note: '16px',
+	footer: '14px',
+	link: '16px',
 }
 
 export const fontFamilies = {

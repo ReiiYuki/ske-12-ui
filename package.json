@@ -7,7 +7,8 @@
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9001 -c ./",
     "build:lib": "bnr build:lib",
-    "prepublishOnly": "npm run build:lib"
+    "prepublishOnly": "npm run build:lib",
+    "lint": "eslint src"
   },
   "betterScripts": {
     "build:lib": {
@@ -36,6 +37,7 @@
   },
   "homepage": "https://github.com/ReiiYuki/ske-12-ui#readme",
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "styled-components": "^4.0.2"

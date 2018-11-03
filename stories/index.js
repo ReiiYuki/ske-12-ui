@@ -1,1 +1,1 @@
-require('stories/RedTextSample')
+require('./Typography')
