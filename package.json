@@ -6,11 +6,11 @@
   "scripts": {
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9001 -c ./",
-    "build:story": "build-storybook -c ./ -o dist",
+    "build:story": "build-storybook -c ./ -o docs",
     "build:lib": "bnr build:lib",
     "prepublishOnly": "npm run build:lib",
 	"lint": "eslint src",
-	"deploy-ghp": "build:story & gh-pages -d dist -b gh-pages"
+	"deploy-ghp": "npm run build:story & gh-pages -d docs"
   },
   "betterScripts": {
     "build:lib": {
