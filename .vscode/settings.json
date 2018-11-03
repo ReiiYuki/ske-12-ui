@@ -1,8 +1,0 @@
-{
-	"files.associations": {
-		"*.json": "jsonc",
-		"*.*rc": "jsonc",
-	},
-	"editor.tabSize": 4,
-	"editor.insertSpaces": false
-}
