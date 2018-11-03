@@ -1,1 +1,1 @@
-export { default as RedTextSample } from 'RedTextSample'
+export { default as CoreStyle } from './core'

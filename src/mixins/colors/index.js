@@ -20,6 +20,7 @@ const fb = {
 }
 
 export default {
+	shadow: '#0000003F',
 	black: '#263238',
 	white: '#FFFFFF',
 	...red,

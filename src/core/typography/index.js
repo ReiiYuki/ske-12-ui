@@ -21,10 +21,14 @@ export default css`
 		font-family: ${fontFamilies.highlight};
 	}
 
+	a,
+	button {
+		font-size: ${fontSizes.link};
+	}
+
 	a {
 		text-decoration: none;
 		color: ${colors.red};
-		font-size: ${fontSizes.link};
 		&:hover {
 			text-decoration: none;
 			color: ${colors.red100};
