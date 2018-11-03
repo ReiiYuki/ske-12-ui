@@ -5,6 +5,7 @@
 	],
 	"plugins": [
 		"@babel/proposal-export-default",
-		"@babel/proposal-export-default-from"
+		"@babel/proposal-export-default-from",
+		"babel-plugin-styled-components",
 	]
 }
