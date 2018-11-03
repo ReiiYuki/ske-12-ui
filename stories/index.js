@@ -1,1 +1,2 @@
 require('./Typography')
+require('./Color')
