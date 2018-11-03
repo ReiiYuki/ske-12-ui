@@ -23,6 +23,8 @@ Deploy GH-Pages
 
 ```
 npm run build:story
+git add .
+git commit -m "Update Docs"
 git subtree push --prefix docs origin gh-pages
 ```
 
