@@ -1,4 +1,4 @@
-import FacebookButton from 'components/FacebookButton'
+import FacebookButton from 'components/button/FacebookButton'
 import React from 'react'
 
 const Facebook = () => (

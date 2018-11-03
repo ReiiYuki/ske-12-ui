@@ -1,4 +1,4 @@
-import Button from 'components/Button'
+import Button from 'components/button/Button'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { facebookButtonColorSet } from 'mixins/facebook'
