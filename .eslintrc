@@ -1,0 +1,24 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"standard"
+	],
+	"settings": {
+		"react": {
+			"version": "latest"
+		}
+	},
+	"parser": "babel-eslint",
+	"rules": {
+		"no-tabs": "off",
+		"indent": [
+			"error",
+			"tab"
+		],
+		"comma-dangle": [
+			"error",
+			"always-multiline"
+		]
+	}
+}
