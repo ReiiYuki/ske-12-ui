@@ -62,3 +62,6 @@ typings/
 
 # prod build
 lib
+
+# cache
+.cache
