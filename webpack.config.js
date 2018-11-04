@@ -17,7 +17,7 @@ module.exports = {
 				use: 'babel-loader',
 			},
 			{
-				test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
+				test: /\.(eot|svg|ttf|woff|woff2|otf|jpg|png)$/,
 				loader: 'file-loader',
 			},
 		],
