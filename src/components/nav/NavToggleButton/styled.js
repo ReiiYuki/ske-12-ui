@@ -19,12 +19,7 @@ const closeStyle = css`
 `
 
 function applyStyle ({ isOpen }) {
-	return css`
-		${isOpen ? openStyle : closeStyle};
-		&:hover {
-			${isOpen ? closeStyle : openStyle};
-		}
-	`
+	return isOpen ? closeStyle : openStyle
 }
 
 export const ButtonContainer = styled.div`
@@ -45,7 +40,7 @@ export const ButtonContainer = styled.div`
 			width: 100%;
 			height: 4px;
 			position: absolute;
-			transition: top 0.2s ease-in-out;
+			transition: top 0.3s ease-in-out;
 		}
 
 		${applyStyle};
