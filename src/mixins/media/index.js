@@ -1,5 +1,3 @@
-import { css } from 'styled-components'
-
 export const screen = {
 	xxs: '345px',
 	xs: '576px',
@@ -8,11 +6,9 @@ export const screen = {
 	lg: '1200px',
 }
 
-export default Object.keys(screen).reduce((media, size) => {
-	media[size] = (...args) => css`
-		@media (max-width: ${screen[size]}px) {
-			css(...args)};
-		}
-	`
+const media = Object.keys(screen).reduce((media, size) => {
+	media[size] = `max-width: ${screen[size]}`
 	return media
 }, {})
+
+export default media

@@ -16,12 +16,10 @@ export default css`
 	h4,
 	h5,
 	h6,
-	button,
-	a {
+	button {
 		font-family: ${fontFamilies.highlight};
 	}
 
-	a,
 	button {
 		font-size: ${fontSizes.link};
 	}
@@ -29,6 +27,7 @@ export default css`
 	a {
 		text-decoration: none;
 		color: ${colors.red};
+		transition: color 0.2s ease-in-out;
 		&:hover {
 			text-decoration: none;
 			color: ${colors.red100};
