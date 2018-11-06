@@ -17,24 +17,29 @@ function openStyle ({ isOpen }) {
 
 export const Nav = styled.div`
 	position: fixed;
-	max-width: 100%;
 
 	left: 8px;
 	right: 8px;
-	padding: 0 64px;
 
 	z-index: ${zIndexes.nav};
 	background: ${colors.white};
 	border-radius: 0 0 ${borders.default} ${borders.default};
 	box-shadow: ${shadows.default};
-	display: flex;
-	justify-content: space-between;
 
 	@media (${media.xs}) {
-		padding: 0 40px;
 		transition: transform 0.3s ease-in-out;
 		transform: translateY(calc(-100% + 64px));
 		${openStyle};
+	}
+`
+
+export const NavBody = styled.div`
+	display: flex;
+	justify-content: space-between;
+	padding: 0 64px;
+
+	@media (${media.xs}) {
+		padding: 0 32px;
 		flex-direction: column-reverse;
 		align-items: center;
 		> div > *:not(:first-child) {

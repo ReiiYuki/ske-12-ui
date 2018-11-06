@@ -14,7 +14,6 @@ const Nav = () => (
 			</NavItem>
 			<NavItem>Nav Item</NavItem>
 			<NavItem>Nav Item</NavItem>
-			<NavItem>Nav Item</NavItem>
 		</NavGroup>
 	</NavBar>
 )

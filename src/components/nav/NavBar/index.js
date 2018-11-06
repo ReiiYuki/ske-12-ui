@@ -1,6 +1,7 @@
+import { Nav, NavBody } from './styled'
 import React, { PureComponent } from 'react'
 
-import { Nav } from './styled'
+import NavToggleButton from 'components/nav/NavToggleButton'
 import PropTypes from 'prop-types'
 
 class NavBar extends PureComponent {
@@ -13,12 +14,17 @@ class NavBar extends PureComponent {
 		this.setState({ isOpen: !isOpen })
 	}
 
+	close = () => {
+		this.setState({ isOpen: false })
+	}
+
 	render () {
 		const { children } = this.props
 		const { isOpen } = this.state
 		return (
-			<Nav onClick={this.toggle} isOpen={isOpen}>
-				{children}
+			<Nav isOpen={isOpen}>
+				<NavToggleButton onClick={this.toggle} isOpen={isOpen} />
+				<NavBody onClick={this.close}>{children}</NavBody>
 			</Nav>
 		)
 	}
