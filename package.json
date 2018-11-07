@@ -1,6 +1,6 @@
 {
   "name": "ske-12-ui",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "UIKit for SKE-12 Site",
   "main": "lib/index.js",
   "scripts": {
