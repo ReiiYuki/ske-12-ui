@@ -6,6 +6,7 @@ export const fontSizes = {
 	note: '16px',
 	footer: '14px',
 	link: '16px',
+	nav: '20px',
 }
 
 export const fontFamilies = {

@@ -8,6 +8,9 @@ import typograpgy from 'core/typography'
 export const BaseSheet = createGlobalStyle`
 	${fontStyles}
 	${typograpgy}
+	body {
+		margin: 0;
+	}
 `
 
 const CoreStyle = ({ children }) => (
