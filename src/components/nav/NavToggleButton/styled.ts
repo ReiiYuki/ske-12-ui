@@ -18,7 +18,7 @@ const closeStyle = css`
 	}
 `
 
-function applyStyle ({ isOpen }) {
+function applyStyle ({ isOpen }: { isOpen: boolean }) {
 	return isOpen ? closeStyle : openStyle
 }
 

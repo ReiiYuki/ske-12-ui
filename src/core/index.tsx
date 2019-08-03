@@ -13,7 +13,7 @@ export const BaseSheet = createGlobalStyle`
 	}
 `
 
-const CoreStyle = ({ children }) => (
+const CoreStyle = ({ children }: { children: React.ReactElement<any> }) => (
 	<Fragment>
 		<BaseSheet />
 		{children}

@@ -1,10 +1,12 @@
 {
 	"presets": [
-		"@babel/preset-env",
-		"@babel/preset-react"
+		"@babel/env",
+        "@babel/typescript",
+		"@babel/react"
 	],
 	"plugins": [
-		"@babel/plugin-proposal-class-properties",
+		"@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread",
 		"@babel/proposal-export-default",
 		"@babel/proposal-export-default-from",
 		"babel-plugin-styled-components"

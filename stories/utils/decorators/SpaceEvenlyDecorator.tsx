@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { RenderFunction, StoryDecorator } from '@storybook/react'
 
 const SpaceEvenlyContainer = styled.div`
 	display: flex;
@@ -8,8 +9,10 @@ const SpaceEvenlyContainer = styled.div`
 	flex-wrap: wrap;
 `
 
-const SpaceEvenlyDecorator = storyFn => (
-	<SpaceEvenlyContainer>{storyFn()}</SpaceEvenlyContainer>
+const SpaceEvenlyDecorator: StoryDecorator = (storyFn: RenderFunction) => (
+	<SpaceEvenlyContainer>
+		{storyFn()}
+	</SpaceEvenlyContainer>
 )
 
 export default SpaceEvenlyDecorator

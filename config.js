@@ -1,11 +1,9 @@
-import { configure, setAddon } from '@storybook/react'
+import { configure } from '@storybook/react'
 
-import JSXAddon from 'storybook-addon-jsx'
+const req = require.context('./stories', true, /\.tsx?$/)
 
 function loadStories () {
-	require('stories')
+	req.keys().forEach(req)
 }
-
-setAddon(JSXAddon)
 
 configure(loadStories, module)
