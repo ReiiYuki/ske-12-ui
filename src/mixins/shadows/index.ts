@@ -1,7 +1,7 @@
 import colors from 'mixins/colors'
 import { css } from 'styled-components'
 
-function getShadow (position) {
+function getShadow (position: string) {
 	return `${position} ${colors.shadow}`
 }
 

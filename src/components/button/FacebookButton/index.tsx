@@ -1,14 +1,14 @@
 import Button from 'components/button/Button'
-import PropTypes from 'prop-types'
 import React from 'react'
 import { facebookButtonColorSet } from 'mixins/facebook'
 
-const FacebookButton = props => (
+interface Props {
+	children: React.ReactNode
+	disabled?: boolean
+}
+
+const FacebookButton = (props: Props) => (
 	<Button colorSet={facebookButtonColorSet} {...props} />
 )
-
-FacebookButton.propTypes = {
-	children: PropTypes.node.isRequired,
-}
 
 export default FacebookButton

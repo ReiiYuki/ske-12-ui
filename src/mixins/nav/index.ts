@@ -3,7 +3,11 @@ import { fontFamilies, fontSizes } from 'mixins/typography'
 import colors from 'mixins/colors'
 import { css } from 'styled-components'
 
-function activeStyle ({ isActive }) {
+interface Props {
+	isActive?: boolean
+}
+
+function activeStyle ({ isActive = false }: Props) {
 	return (
 		isActive &&
 		css`

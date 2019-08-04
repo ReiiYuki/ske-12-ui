@@ -2,7 +2,12 @@ import styled, { css } from 'styled-components'
 
 import colors from 'mixins/colors'
 
-function applyColor ({ color, isInverse }) {
+interface Props {
+	color?: string
+	isInverse?: boolean
+}
+
+function applyColor ({ color, isInverse = false }: Props) {
 	return css`
 		background: ${color};
 		color: ${isInverse ? colors.black : colors.white};

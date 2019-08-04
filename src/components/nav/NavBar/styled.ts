@@ -1,12 +1,16 @@
 import styled, { css } from 'styled-components'
 
-import borders from 'mixins/borders'
+import { borders } from 'mixins/borders'
 import colors from 'mixins/colors'
 import media from 'mixins/media'
 import shadows from 'mixins/shadows'
 import zIndexes from 'mixins/z-index'
 
-function openStyle ({ isOpen }) {
+interface Props {
+	isOpen?: boolean
+}
+
+function openStyle ({ isOpen = false }: Props) {
 	return (
 		isOpen &&
 		css`

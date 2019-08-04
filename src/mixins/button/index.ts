@@ -1,6 +1,7 @@
 import { clickableShadowStyle } from 'mixins/shadows'
 import colors from 'mixins/colors'
 import { css } from 'styled-components'
+import { ColorSet } from 'types'
 
 export const defaultButtonColorSet = {
 	textColor: colors.white,
@@ -12,7 +13,7 @@ export const defaultButtonColorSet = {
 	},
 }
 
-export function buttonStyle (colorSet, border) {
+export function buttonStyle (colorSet: ColorSet, border: string) {
 	const {
 		textColor,
 		buttonColors: { disable, normal, hover, press },

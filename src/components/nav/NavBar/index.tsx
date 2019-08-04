@@ -4,7 +4,15 @@ import React, { PureComponent } from 'react'
 import NavToggleButton from 'components/nav/NavToggleButton'
 import PropTypes from 'prop-types'
 
-class NavBar extends PureComponent {
+interface Props {
+	children: React.ReactNode
+}
+
+interface State {
+	isOpen: boolean
+}
+
+export default class NavBar extends PureComponent<Props, State> {
 	state = {
 		isOpen: false,
 	}
@@ -29,9 +37,3 @@ class NavBar extends PureComponent {
 		)
 	}
 }
-
-NavBar.propTypes = {
-	children: PropTypes.node.isRequired,
-}
-
-export default NavBar
